@@ -1,4 +1,29 @@
 {
   "name": "@nodestats/web",
-  "private": true
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vue-tsc && vite build"
+  },
+  "dependencies": {
+    "bytes": "^3.1.2",
+    "humanize-duration": "^3.31.0",
+    "naive-ui": "^2.35.0",
+    "socket.io-client": "^4.7.2",
+    "vue": "^3.3.9"
+  },
+  "devDependencies": {
+    "@types/bytes": "^3.1.4",
+    "@types/humanize-duration": "^3.27.3",
+    "@types/js-yaml": "^4.0.9",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "autoprefixer": "^10.4.16",
+    "js-yaml": "^4.1.0",
+    "postcss": "^8.4.31",
+    "socket.io": "^4.7.2",
+    "systeminformation": "^5.21.18",
+    "tailwindcss": "^3.3.5",
+    "vite": "^5.0.2"
+  }
 }

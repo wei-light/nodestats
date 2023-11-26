@@ -10,6 +10,7 @@
     "nodejs"
   ],
   "scripts": {
+    "boot:server": "pnpm -F @nodestats/web dev",
     "commit": "cz",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
@@ -19,6 +20,7 @@
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.54.0",
+    "tsx": "^4.5.0",
     "typescript": "^5.2.2"
   },
   "config": {

@@ -28,5 +28,11 @@
     "json",
     "jsonc",
     "yaml"
-  ]
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  }
 }
