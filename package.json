@@ -1,0 +1,12 @@
+{
+  "name": "@nodestats/monorepo",
+  "description": "A server monitoring powered by nodejs",
+  "scripts": {},
+  "keywords": [
+    "server",
+    "status",
+    "monitor",
+    "nodejs"
+  ],
+  "author": "Weiliang Liu"
+}
