@@ -2,6 +2,7 @@
   "name": "@nodestats/socket",
   "private": true,
   "dependencies": {
+    "socket.io": "^4.7.2",
     "socket.io-client": "^4.7.2",
     "systeminformation": "^5.21.18"
   }
