@@ -4,13 +4,27 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-devDependencies:
-  commitizen:
-    specifier: ^4.3.0
-    version: 4.3.0(typescript@5.3.2)
-  cz-conventional-changelog:
-    specifier: ^3.3.0
-    version: 3.3.0(typescript@5.3.2)
+importers:
+
+  .:
+    devDependencies:
+      commitizen:
+        specifier: ^4.3.0
+        version: 4.3.0(typescript@5.3.2)
+      cz-conventional-changelog:
+        specifier: ^3.3.0
+        version: 3.3.0(typescript@5.3.2)
+      typescript:
+        specifier: ^5.3.2
+        version: 5.3.2
+
+  packages/client: {}
+
+  packages/server: {}
+
+  packages/socket: {}
+
+  packages/web: {}
 
 packages:
 
@@ -998,7 +1012,6 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
-    optional: true
 
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
