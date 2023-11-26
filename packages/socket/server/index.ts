@@ -1,4 +1,6 @@
 import type http from 'node:http'
+import type { Server as HTTPSServer } from 'node:https'
+import type { Http2SecureServer } from 'node:http2'
 import type { Socket } from 'socket.io'
 import { Server } from 'socket.io'
 import type {
@@ -12,7 +14,7 @@ import type {
 import { randomString, setMapValToArr } from './utils'
 
 export function createSocketIOServer(
-  server: http.Server,
+  server: http.Server | HTTPSServer | Http2SecureServer,
   clients: IClientConfigOptions[],
   interval: number,
 ) {
