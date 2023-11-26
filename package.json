@@ -1,12 +1,23 @@
 {
   "name": "@nodestats/monorepo",
   "description": "A server monitoring powered by nodejs",
-  "scripts": {},
+  "scripts": {
+    "commit": "cz"
+  },
   "keywords": [
     "server",
     "status",
     "monitor",
     "nodejs"
   ],
-  "author": "Weiliang Liu"
+  "author": "Weiliang Liu",
+  "devDependencies": {
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
 }
