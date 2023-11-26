@@ -1,20 +1,25 @@
 {
   "name": "@nodestats/monorepo",
+  "type": "module",
   "description": "A server monitoring powered by nodejs",
-  "scripts": {
-    "commit": "cz"
-  },
+  "author": "Weiliang Liu",
   "keywords": [
     "server",
     "status",
     "monitor",
     "nodejs"
   ],
-  "author": "Weiliang Liu",
+  "scripts": {
+    "commit": "cz",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.1.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "typescript": "^5.3.2"
+    "eslint": "^8.54.0",
+    "typescript": "^5.2.2"
   },
   "config": {
     "commitizen": {

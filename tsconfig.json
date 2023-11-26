@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
+    "target": "es2017",
     "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "paths": {
       "@nodestats/*": ["packages/*"]
     },
-    "module": "esnext",
-    "target": "es2017",
-    "moduleResolution": "bundler",
     "strict": true,
     "strictPropertyInitialization": false
   }
