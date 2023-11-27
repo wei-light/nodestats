@@ -8,6 +8,7 @@
       "@nodestats/*": ["packages/*"]
     },
     "strict": true,
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "noEmit": true
   }
 }
