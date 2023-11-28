@@ -27,7 +27,33 @@ importers:
         specifier: ^5.2.2
         version: 5.3.2
 
-  packages/client: {}
+  packages/client:
+    dependencies:
+      chalk:
+        specifier: ^5.3.0
+        version: 5.3.0
+      commander:
+        specifier: ^11.1.0
+        version: 11.1.0
+      figlet:
+        specifier: ^1.7.0
+        version: 1.7.0
+      socket.io-client:
+        specifier: ^4.7.2
+        version: 4.7.2
+      systeminformation:
+        specifier: ^5.21.18
+        version: 5.21.18
+      validator:
+        specifier: ^13.11.0
+        version: 13.11.0
+    devDependencies:
+      '@types/figlet':
+        specifier: ^1.5.8
+        version: 1.5.8
+      '@types/validator':
+        specifier: ^13.11.7
+        version: 13.11.7
 
   packages/logger:
     dependencies:
@@ -1018,6 +1044,10 @@ packages:
     dependencies:
       '@types/node': 18.18.13
 
+  /@types/figlet@1.5.8:
+    resolution: {integrity: sha512-G22AUvy4Tl95XLE7jmUM8s8mKcoz+Hr+Xm9W90gJsppJq9f9tHvOGkrpn4gRX0q/cLtBdNkWtWCKDg2UDZoZvQ==}
+    dev: true
+
   /@types/humanize-duration@3.27.3:
     resolution: {integrity: sha512-wiiiFYjnrYDJE/ujU7wS/NShqp12IKrejozjDtcejP0zYi+cjyjVcfZHwcFUDKVJ7tHGsmgeW2ED92ABIIjfpg==}
     dev: true
@@ -1066,6 +1096,10 @@ packages:
 
   /@types/unist@2.0.10:
     resolution: {integrity: sha512-IfYcSBWE3hLpBg8+X2SEa8LVkJdJEkT2Ese2aaLs3ptGdVtABxndrMaxuFlQ1qdFf9Q5rDvDpxI3WwgvKFAsQA==}
+    dev: true
+
+  /@types/validator@13.11.7:
+    resolution: {integrity: sha512-q0JomTsJ2I5Mv7dhHhQLGjMvX0JJm5dyZ1DXQySIUzU1UlwzB8bt+R6+LODUbz0UDIOvEzGc28tk27gBJw2N8Q==}
     dev: true
 
   /@typescript-eslint/eslint-plugin@6.12.0(@typescript-eslint/parser@6.12.0)(eslint@8.54.0)(typescript@5.3.2):
@@ -1669,6 +1703,11 @@ packages:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
     requiresBuild: true
     dev: true
+
+  /commander@11.1.0:
+    resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
+    engines: {node: '>=16'}
+    dev: false
 
   /commander@4.1.1:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
@@ -2489,6 +2528,12 @@ packages:
     dependencies:
       reusify: 1.0.4
     dev: true
+
+  /figlet@1.7.0:
+    resolution: {integrity: sha512-gO8l3wvqo0V7wEFLXPbkX83b7MVjRrk1oRLfYlZXol8nEpb/ON9pcKLI4qpBv5YtOTfrINtqb7b40iYY2FTWFg==}
+    engines: {node: '>= 0.4.0'}
+    hasBin: true
+    dev: false
 
   /figures@3.2.0:
     resolution: {integrity: sha512-yaduQFRKLXYOGgEn6AZau90j3ggSOyiqXU0F9JZfeXYhNa+Jk4X+s45A2zg5jns87GAFa34BBm2kXw4XpNcbdg==}
@@ -4209,6 +4254,11 @@ packages:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
     dev: true
+
+  /validator@13.11.0:
+    resolution: {integrity: sha512-Ii+sehpSfZy+At5nPdnyMhx78fEoPDkR2XW/zimHEL3MyGJQOCQ7WeP20jPYRz7ZCpcKLB21NxuXHF3bxjStBQ==}
+    engines: {node: '>= 0.10'}
+    dev: false
 
   /vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
