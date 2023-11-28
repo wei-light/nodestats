@@ -1,5 +1,6 @@
 {
   "name": "@nodestats/socket",
+  "type": "module",
   "private": true,
   "dependencies": {
     "socket.io": "^4.7.2",
