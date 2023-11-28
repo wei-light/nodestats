@@ -10,7 +10,7 @@
     "nodejs"
   ],
   "scripts": {
-    "boot:server": "pnpm -F @nodestats/web dev",
+    "boot:web": "pnpm -F @nodestats/web dev",
     "commit": "cz",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
