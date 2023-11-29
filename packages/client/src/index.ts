@@ -2,7 +2,7 @@ import validator from 'validator'
 import figlet from 'figlet'
 import { program } from 'commander'
 import { connectClientToServer } from '@nodestats/socket/client'
-import logger from '@nodestats/logger'
+import logger from '@nodestats/shared/logger'
 
 interface ICommandOptions {
   server?: string

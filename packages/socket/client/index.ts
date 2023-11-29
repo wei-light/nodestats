@@ -1,5 +1,5 @@
 import { type Socket, io } from 'socket.io-client'
-import logger from '@nodestats/logger'
+import logger from '@nodestats/shared/logger'
 import type { ClientToServerEvents, ServerToClientEvents } from '../type'
 import { Status } from './status'
 
