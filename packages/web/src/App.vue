@@ -8,7 +8,7 @@ import TheHeader from './components/TheHeader.vue'
 const stats = ref<IStats[]>([])
 
 connectWebToServer((data) => {
-  stats.value = data
+  stats.value = data.sort((a, b) => Number(b.online) - Number(a.online))
 })
 </script>
 
