@@ -13,15 +13,20 @@
     "boot:client": "tsx packages/client/src/index.ts",
     "boot:server": "tsx packages/server/src/index.ts",
     "boot:web": "pnpm -F @nodestats/web dev",
+    "build": "node scripts/build.mjs",
     "commit": "cz",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.1.0",
+    "@rollup/plugin-typescript": "^11.1.5",
     "commitizen": "^4.3.0",
+    "cross-env": "^7.0.3",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.54.0",
+    "rollup": "^4.6.0",
+    "shelljs": "^0.8.5",
     "tsx": "^4.5.0",
     "typescript": "^5.2.2"
   },
