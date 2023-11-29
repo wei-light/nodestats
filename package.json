@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "boot:client": "tsx packages/client/src/index.ts",
+    "boot:server": "tsx packages/server/src/index.ts",
     "boot:web": "pnpm -F @nodestats/web dev",
     "commit": "cz",
     "lint": "eslint .",

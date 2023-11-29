@@ -1,3 +1,21 @@
 {
-  "name": "@nodestats/server"
+  "name": "@nodestats/server",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "figlet": "^1.7.0",
+    "joi": "^17.11.0",
+    "js-yaml": "^4.1.0",
+    "koa": "^2.14.2",
+    "koa-static": "^5.0.0",
+    "pkg-dir": "^8.0.0",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/js-yaml": "^4.0.9",
+    "@types/koa": "^2.13.12",
+    "@types/koa-static": "^4.0.4"
+  }
 }
