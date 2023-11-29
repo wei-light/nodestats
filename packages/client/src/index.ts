@@ -1,8 +1,8 @@
-import validator from 'validator'
-import figlet from 'figlet'
 import { program } from 'commander'
-import { connectClientToServer } from '@nodestats/socket/client'
+import figlet from 'figlet'
 import logger from '@nodestats/shared/logger'
+import { ipSchema, portSchema } from '@nodestats/shared/schema'
+import { connectClientToServer } from '@nodestats/socket/client'
 
 interface ICommandOptions {
   server?: string
@@ -21,15 +21,15 @@ program
 const options = program.opts<ICommandOptions>()
 
 const server = options.server ?? '127.0.0.1'
-const port = (options.port ?? 35601).toString()
+const port = Number(options.port ?? 35601)
 const token = options.token
 
-if (!validator.isIP(server, 4)) {
-  logger.error('The ip you have specified is not a valid ipv4')
+if (ipSchema.validate(server).error) {
+  logger.error('The ip is invalid')
   process.exit(1)
 }
-if (!validator.isPort(port)) {
-  logger.error('The port you have specified is not a valid port')
+if (portSchema.validate(port).error) {
+  logger.error('The port is invalid')
   process.exit(1)
 }
 if (!token) {
@@ -47,4 +47,4 @@ console.log(
   }),
 )
 
-connectClientToServer(server, Number(port), token)
+connectClientToServer(server, port, token)
