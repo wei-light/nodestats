@@ -1,14 +1,6 @@
 {
   "name": "@nodestats/monorepo",
   "type": "module",
-  "description": "A server monitoring powered by nodejs",
-  "author": "Weiliang Liu",
-  "keywords": [
-    "server",
-    "status",
-    "monitor",
-    "nodejs"
-  ],
   "scripts": {
     "boot:client": "tsx packages/client/src/index.ts",
     "boot:server": "tsx packages/server/src/index.ts",
@@ -29,7 +21,7 @@
     "shelljs": "^0.8.5",
     "tslib": "^2.6.2",
     "tsx": "^4.5.0",
-    "typescript": "^5.2.2"
+    "typescript": "~5.2.2"
   },
   "config": {
     "commitizen": {

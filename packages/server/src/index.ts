@@ -1,5 +1,8 @@
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import figlet from 'figlet'
+import pkgDir from 'pkg-dir'
+import { readPackageSync } from 'read-pkg'
 import { program } from 'commander'
 import logger from '@nodestats/shared/logger'
 import { integerSchema, portSchema } from '@nodestats/shared/schema'
@@ -12,12 +15,17 @@ interface ICommandOptions {
   clientConfig?: string
 }
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
+const { version } = readPackageSync({ cwd: pkgDir.sync(__dirname)! })
+
 program
   .name('nodestats-server')
   .description('CLI to start a nodestats server')
   .option('-p, --port <port>', 'port number')
   .option('-i, --interval <interval>', 'interval push stats to web')
   .option('--client-config <path>', 'client configuration absolute path')
+  .version(`v${version}`, '-v, --version', 'output the current version')
   .parse()
 
 const options = program.opts<ICommandOptions>()
