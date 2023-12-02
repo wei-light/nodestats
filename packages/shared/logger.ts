@@ -6,7 +6,7 @@ interface ICustomOptions {
 }
 
 function custom(title: string, text: string, { titleColor }: ICustomOptions) {
-  const time = new Date().toLocaleTimeString()
+  const time = new Date().toLocaleTimeString('en-US', { hour12: false })
 
   if (typeof window === 'undefined')
     console.log(chalk.hex('#aaa')(time), chalk.hex(titleColor)(`[${title}]`), text)
