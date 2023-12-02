@@ -14,6 +14,8 @@ export default defineConfig({
     format: 'esm',
   },
   plugins: [
-    typescript(),
+    typescript({
+      tsconfig: 'tsconfig.build.json',
+    }),
   ],
 })
