@@ -1,7 +1,7 @@
 {
   "name": "@nodestats/client",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "A server monitoring powered by nodejs (client cli)",
   "author": "Weiliang Liu",
   "homepage": "https://github.com/wei-light/nodestats/tree/main/packages/client/#readme",
