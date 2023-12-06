@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IStats } from '@nodestats/socket/type';
+import type { IStats } from '@nodestats/socket/type'
 import { format } from '../utils/format'
 import PopoverProgress from './PopoverProgress.vue'
 

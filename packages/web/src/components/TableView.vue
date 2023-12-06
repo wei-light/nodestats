@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { h } from 'vue'
-import { NDataTable, NTag, type DataTableColumns } from 'naive-ui'
+import { type DataTableColumns, NDataTable, NTag } from 'naive-ui'
 import type { IStats } from '@nodestats/socket/type'
 import { format } from '../utils/format'
 import BaseProgress from './BaseProgress.vue'
@@ -60,8 +60,8 @@ const columns: DataTableColumns<IStats> = [
     key: 'ram',
     render: (rowData) => {
       return rowData.online && rowData.memoryUsed && rowData.memoryTotal
-      ? h(PopoverProgress, { rate: rowData.memoryUsed / rowData.memoryTotal, text: `${format.bytes(rowData.memoryUsed)} |  ${format.bytes(rowData.memoryTotal)}` }) 
-      : 'NULL'
+        ? h(PopoverProgress, { rate: rowData.memoryUsed / rowData.memoryTotal, text: `${format.bytes(rowData.memoryUsed)} |  ${format.bytes(rowData.memoryTotal)}` })
+        : 'NULL'
     },
   },
   {
@@ -69,8 +69,8 @@ const columns: DataTableColumns<IStats> = [
     key: 'rom',
     render: (rowData) => {
       return rowData.online && rowData.diskUsed && rowData.diskTotal
-      ? h(PopoverProgress, { rate: rowData.diskUsed / rowData.diskTotal, text: `${format.bytes(rowData.diskUsed)} |  ${format.bytes(rowData.diskTotal)}` }) 
-      : 'NULL'
+        ? h(PopoverProgress, { rate: rowData.diskUsed / rowData.diskTotal, text: `${format.bytes(rowData.diskUsed)} |  ${format.bytes(rowData.diskTotal)}` })
+        : 'NULL'
     },
   },
 ]
